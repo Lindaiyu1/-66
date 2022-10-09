@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>何某人的第一个网页</title>
+    <style>  
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <audio src="https://m801.music.126.net/20221009122147/9bdb05aa3d2dec23ae12ee044ea7b2fc/jdyyaac/obj/w5rDlsOJwrLDjj7CmsOj/14049768355/35b1/b9e0/dab2/f23df6c7298e99f9d6990d51c1dd514d.m4a"  autoplay="autoplay
+    loop=loop">
+
+    </audio>
+   <div style="
+   background-color: #f9a; text-align: center; padding:40px;color :yellow;
+  "
+   
+   >
+     <image src=https://pb.nichi.co/scrap-amount-embody alt="林黛玉" width=500px height=290 >
+     大家好这是我的女神林黛玉，哈哈哈哈哈哈哈哈哈 
+   </div>
+   <div >
+    <a href="https://www.libvio.me/"><image src=https://pb.nichi.co/tourist-foam-side width=80 heigh=30>免费看片1区</a>
+    <a href="https://www.xqmi.top/"><image src=https://pb.nichi.co/movie-display-quit width=80 heigh=30>无敌战神看片2区</a>
+    <a href="https://www.novipnoad.com/"><image src=https://pb.nichi.co/afraid-believe-round width=80 heigh=30>吊炸天看片3区</a>
+    <a href="https://store.steampowered.com/about/"><image src=https://pb.nichi.co/hurdle-affair-slide width=80 height=30>正版steam在这里欢迎和我一起玩求生之路2</a>
+   </div>
+   <div style="
+   background-color: #f1f1f1; text-align: center; padding:20px;color:red
+    ;
+  ">
+  <p>爷的网站 glory belong to 爷</p>
+  <p>就这样吧，我先去吃饭了</p>
+  </div>
+  </body>
+</html>
