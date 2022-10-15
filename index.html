@@ -1,37 +1,325 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>何某人的第一个网页</title>
-    <style>  
-      body {
-        margin: 0;
+    <meta charset="UTF-8" />
+    		<!--声明css代码域-->
+		<style type="text/css">
+		/*设置div样式*/
+			#showdiv{
+				border:  solid 1px;
+				border-radius: 10px;/*设置边框角度*/
+				width: 160px;
+				height:200px;
+				text-align: center;
+				margin: auto;/*设置居中*/
+				margin-top: 10px;
+				background-color: rgb(26, 19, 80);	
+			
+				
+			}
+		
+			input[type=text]{
+				margin-top: 10px;
+				width: 145px;
+				height: 20px;
+				font-size: 10px;
+				
+			}
+		/*设置按钮样式*/
+			input[type=button]{
+				width: 30px;
+				height: 30px;
+				margin-top: 10px;
+				margin-left: 2px;
+				margin-right: 2.5px;
+				font-size: 15px;
+				font-weight: bold;
+				font-family:Georgia, 'Times New Roman', Times, serif
+			}  
+		</style>
+		<!--声明js代码域-->
+		<script type="text/javascript">
+			//声明函数
+			function test(btn){
+				//获取button按钮对象的value值
+				var num=btn.value;
+				//根据用户点击动作执行对应的业务逻辑
+				switch (num){
+					case "=":
+						document.getElementById("inp").value=eval(document.getElementById("inp").value);
+						break;
+					case "c":
+						document.getElementById("inp").value="";
+						break;
+					default:
+						//将按钮的值赋值给input输入框
+						document.getElementById("inp").value=document.getElementById("inp").value+num;
+						break;
+				}
+			}
+		</script>
+    <title>嗜魂封魔</title>
+    <style>
+      .flex {
+        display: flex;
+      }
+      .zise {
+        background-color: blueviolet;
+      }
+      .column {
+        flex-direction: column;
+      }
+      @media (max-width: 600px) {
+        .cebian {
+          display: none;
+        }
+        .column {
+          flex-direction: column;
+        }
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .qs {
+        background-color: aquamarine;
+      }
+      .flex {
+        display: flex;
+      }
+      * {
+        border: 1px solid rgb(17, 160, 124);
+      }
+      .shaow {
+        box-shadow: 10px 5px 5px rgb(51, 51, 49);
+      }
+      .flex3 {
+        flex: 3;
+      }
+      .row {
+        flex-direction: row;
+      }
+       .autoscroll {
+        color: bisque;
+        background: rgb(213, 22, 137);
+        overflow: auto;
+      }
+      .top {
+        margin-top: 30px;
+      }
+      .autoscrolll {
+        color: bisque;
+        background: rgb(26, 198, 74);
+        overflow: auto;
       }
     </style>
   </head>
-  <body>
-   <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=539464&auto=1&height=66"></iframe>
-   <div style="
-   background-color: #f9a; text-align: center; padding:40px;color :yellow;
-  "
-   
-   >
-     <image src=https://pb.nichi.co/scrap-amount-embody alt="林黛玉" width=500px height=290 >
-     大家好这是我的女神林黛玉，哈哈哈哈哈哈哈哈哈 0
-   </div>
-   <div >
-    <a href="https://www.libvio.me/"><image src=https://pb.nichi.co/tourist-foam-side width=80 heigh=30>免费看片1区</a>
-    <a href="https://www.xqmi.top/"><image src=https://pb.nichi.co/movie-display-quit width=80 heigh=30>无敌战神看片2区</a>
-    <a href="https://www.novipnoad.com/"><image src=https://pb.nichi.co/afraid-believe-round width=80 heigh=30>超级无敌战神看片3区</a>
-    <a href="https://store.steampowered.com/about/"><image src=https://pb.nichi.co/hurdle-affair-slide width=80 height=30>正版steam在这里欢迎和我一起玩求生之路2玩累了就直接睡觉，没问题的</a>
-   </div>
-   <div style="
-   background-color: #f1f1f1; text-align: center; padding:20px;color:red
-    ;
-  ">
-  <p>我的网站 哈哈哈哈</p>
-  <p>就这样吧，我先去吃饭了</p>
-  </div>
+  <body class="flex">
+
+    <!--这个盒子用来装林妹妹的视频-->
+    <div class="zise column shaow" style="width: 200px; height: 100vh">
+      <div
+        class="flex"
+        style="
+          padding: 10px;
+          align-items: center;
+          justify-content: center;
+          border-style: solid;
+        "
+      >
+        <img
+          src="https://s1.328888.xyz/2022/10/14/8dmjB.png"
+          height="80px;"
+          alt="林妹妹"
+        />
+      </div>
+      <div style="text-align: center; font-size: 20px; color: aqua">
+        林黛玉专栏
+      </div>
+       <div>
+        <img
+          src="https://s1.328888.xyz/2022/10/14/8djN6.png"
+          width="80px;"
+          alt="猴楼梦"
+        />
+      </div>
+      <div style="text-align: center; font-size: 20px; color: aqua">
+        <a
+          href="https://www.bilibili.com/video/BV1VY411475s/?spm_id_from=333.999.0.0"
+          >如果用王家卫的方式打开红楼梦/西游记*-*</a
+        >
+      </div>
+      <div>
+        <img
+          src="https://s1.328888.xyz/2022/10/14/8ddmE.png"
+          width="80px;"
+          alt="赌书空忆泼茶时"
+        />
+      </div>
+      <div style="text-align: center; font-size: 20px; color: aqua">
+        <a
+          href="https://www.bilibili.com/video/BV1dW4y1r7bX/?spm_id_from=333.999.0.0"
+          >赌书空忆泼茶时，铁马秋风乱入诗^.^</a
+        >
+      </div>
+      <div>
+        <img
+          src="https://s1.328888.xyz/2022/10/14/8dvkJ.png"
+          width="80px;"
+          alt="到头来南柯梦一场"
+        />
+      </div>
+      <div style="text-align: center; font-size: 20px; color: aqua">
+        <a
+          href="https://www.bilibili.com/video/BV1fL4y1s7Ko/?spm_id_from=333.999.0.0"
+          >白蛇起，笏满床，到头来南柯梦一场</a
+        >
+      </div>
+      <div>
+        <img
+          src="https://s1.328888.xyz/2022/10/14/8vEtw.png"
+          width="80px;"
+          alt="圣黛"
+        />
+      </div>
+      <div style="text-align: center; font-size: 16px; color: aqua">
+        <a
+          href="https://www.bilibili.com/video/BV1GK411K7Ke/?spm_id_from=333.999.0.0"
+          >佛渡众生不度我，宁负如来不负卿</a
+        >
+      </div>
+      <div>
+        <img
+          src="https://s1.328888.xyz/2022/10/14/8vLWi.png"
+          width="80px;"
+          alt="探春"
+        />
+      </div>
+      <div class="zise" style="text-align: center; font-size: 20px; color: aqua">
+        <a
+          href="https://www.bilibili.com/video/BV1gb411W7zo/?spm_id_from=333.999.0.0"
+          >千红一哭，万艳同悲</a
+        >
+      </div>
+      <div class="zise">
+        <img
+          src="https://s1.328888.xyz/2022/10/14/8vO0s.png"
+          width="80px;"
+          alt="凭什么事，我说行就行"
+        />
+      </div>
+      <div class="zise"
+        style="text-align: center; font-size: 12px; color: rgb(200, 200, 33)"
+      >
+        <a
+          href="https://www.bilibili.com/video/BV1B34y1L724/?spm_id_from=333.999.0.0"
+          >我是从来不信什么阴私报应的，凭什么事，我说行就行--王熙凤</a
+        >
+      </div>
+
+      <div class="zise" style="text-align: center; font-size: 32px; color: red">
+        欢迎友友和作者聊红楼梦^--^
+      </div>
+    </div>
+    </div>
+    <!--用来包括省些的右边全部土地-->
+    <div class="flex1">
+      <!--deploy看片网站-->
+      <div class="flex" style="height: 130px; width: 100%">
+         <div class="flex1">
+        <a href="https://www.libvio.me/"
+          ><image src=https://pb.nichi.co/tourist-foam-side height=130px
+          width="205">免费电影1区</a
+        >
+      </div>
+      <div class="flex1">
+        <a href="https://www.xqmi.top/"
+          ><image src=https://pb.nichi.co/movie-display-quit height=130px
+          width="200">免费电影2区</a
+        >
+      </div> <div class="flex1">
+        <a href="https://www.novipnoad.com/"
+          ><image src=https://pb.nichi.co/afraid-believe-round height=130px
+          width=190>免费电影3区</a
+        >
+      </div>
+      <div class="flex1">
+        <a href="https://cupfox.app/"
+          ><image src=https://pb.nichi.co/hurdle-affair-slide
+          height=130px width=190>免费电影4区</a
+        >
+      </div>
+      </div>
+      <!--占领下方土地-->
+      <div class="flex1 flex row">
+        <!--这是左下的大盒子-->
+        <div class="flex3" style=" height: 100vh">4
+          <div>
+    
+        
+        </div>
+          <div class="shaow " id="showdiv" style="background-color:red ;">
+			<input type="text" name="" id="inp" value="" readonly="readonly"/><br />
+			<input type="button" name="" id="btn" value="1"value="" onclick="test(this)"/>
+			<input type="button" name="" id="" value="2" onclick="test(this)"/>
+			<input type="button" name="" id="" value="3" onclick="test(this)"/>
+			<input type="button" name="" id="" value="4" onclick="test(this)"/><br />
+			<input type="button" name="" id="" value="5" onclick="test(this)"/>
+			<input type="button" name="" id="" value="6" onclick="test(this)"/>
+			<input type="button" name="" id="" value="7" onclick="test(this)"/>
+			<input type="button" name="" id="" value="8" onclick="test(this)"/><br />
+			<input type="button" name="" id="" value="9" onclick="test(this)"/>
+			<input type="button" name="" id="" value="+" onclick="test(this)"/>
+			<input type="button" name="" id="" value="-" onclick="test(this)"/>
+			<input type="button" name="" id="" value="*" onclick="test(this)"/><br />
+			<input type="button" name="" id="" value="0" onclick="test(this)"/>
+			<input type="button" name="" id="" value="/" onclick="test(this)"/>
+			<input type="button" name="" id="" value="c" onclick="test(this)"/>
+			<input type="button" name="" id="" value="=" onclick="test(this)"/>
+      
+		</div>
+    <p class="zise" style="text-align: center;">我自己的计算器还没写完善，先复制网友代码救救急，code comefrom https://blog.csdn.net/m0_37671741/article/details/105683900</p>
+          <div style="text-align: center; font-size: 20px; color: aqua;background-color: rgba(21, 198, 106, 0.721);">
+        <img
+          src="https://s1.328888.xyz/2022/10/15/UhC6B.png"
+          width="80px;"
+          alt=""
+        />
+      </div>
+      <div style="text-align: center; font-size: 20px; color: aqua;background-color: rgb(215, 16, 202);">
+        <a
+          href="https://qq.ip138.com/hl.asp"
+          >汇率在线转换</a
+        >
+      </div> 
+        
+          <div style="text-align: center;background-color:blue;">才学疏浅，目前只想到了这么多</div>
+        </div>
+        <!--这是右边的窄盒子-->
+        <div class="flex1 row top" style=" height: 100vh;background-color: rgb(212, 225, 225);">
+         <p style="border: 0px;color: red ;text-align: center;">渔阳大泽乡？</p>
+         <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=25707139&auto=1&height=32"></iframe>
+          <div
+            class="shaow red left right top bottom autoscroll"
+            style="height: 180px"
+          >
+            陈胜者，阳城人也，字涉。吴广者，阳夏人也，字叔。陈涉少时，尝与人佣耕，辍耕之垄上，怅恨久之，曰:“苟富贵，无相忘。”佣者笑而应曰:“若为佣耕，何富贵也？”陈涉太息曰:“嗟乎！燕雀安知鸿鹄之志哉！”
+            二世元年七月，发闾左適戍渔阳，九百人屯大泽乡。陈胜、吴广皆次当行，为屯长。会天大雨，道不通，度已失期。失期，法皆斩。陈胜、吴广乃谋曰:“今亡亦死，举大计亦死；等死，死国可乎？”陈胜曰:“天下苦秦久矣。吾闻二世少子也，不当立，当立者乃公子扶苏。扶苏以数谏故，上使外将兵。今或闻无罪，二世杀之。百姓多闻其贤，未知其死也。项燕为楚将，数有功，爱士卒，楚人怜之。或以为死，或以为亡。今诚以吾众诈自称公子扶苏、项燕，为天下唱，宜多应者。”吴广以为然。乃行卜。卜者知其指意，曰:“足下事皆成，有功。然足下卜之鬼乎！”陈胜、吴广喜，念鬼，曰:“此教我先威众耳。”乃丹书帛曰“陈胜王”，置人所罾鱼腹中。卒买鱼烹食，得鱼腹中书，固以怪之矣。又间令吴广之次所旁丛祠中，夜篝火，狐鸣呼曰:“大楚兴，陈胜王。”卒皆夜惊恐。旦日，卒中往往语，皆指目陈胜。
+          </div>
+           <p style="border: 0px;color: rgb(31, 53, 194) ;text-align: center;">六国论</p>
+          <div
+            class="left shaow right top bottom autoscrolll"
+            style="height: 180px"
+          >
+            六国破灭，非兵不利，战不善，弊在赂秦。赂秦而力亏，破灭之道也。或曰:六国互丧，率赂秦耶？曰:不赂者以赂者丧，盖失强援，不能独完。故曰:弊在赂秦也。
+            秦以攻取之外，小则获邑，大则得城。较秦之所得，与战胜而得者，其实百倍；诸侯之所亡，与战败而亡者，其实亦百倍。则秦之所大欲，诸侯之所大患，固不在战矣。思厥先祖父，暴霜露，斩荆棘，以有尺寸之地。子孙视之不甚惜，举以予人，如弃草芥。今日割五城，明日割十城，然后得一夕安寝。起视四境，而秦兵又至矣。然则诸侯之地有限，暴秦之欲无厌，奉之弥繁，侵之愈急。故不战而强弱胜负已判矣。至于颠覆，理固宜然。古人云:“以地事秦，犹抱薪救火，薪不尽，火不灭。”此言得之。
+            齐人未尝赂秦，终继五国迁灭，何哉？与嬴而不助五国也。五国既丧，齐亦不免矣。燕赵之君，始有远略，能守其土，义不赂秦。是故燕虽小国而后亡，斯用兵之效也。至丹以荆卿为计，始速祸焉。赵尝五战于秦，二败而三胜。后秦击赵者再，李牧连却之。洎牧以谗诛，邯郸为郡，惜其用武而不终也。且燕赵处秦革灭殆尽之际，可谓智力孤危，战败而亡，诚不得已。向使三国各爱其地，齐人勿附于秦，刺客不行，良将犹在，则胜负之数，存亡之理，当与秦相较，或未易量。
+            呜呼！以赂秦之地封天下之谋臣，以事秦之心礼天下之奇才，并力西向，则吾恐秦人食之不得下咽也。悲夫！有如此之势，而为秦人积威之所劫，日削月割，以趋于亡。为国者无使为积威之所劫哉！
+            夫六国与秦皆诸侯，其势弱于秦，而犹有可以不赂而胜之之势。苟以天下之大，下而从六国破亡之故事，是又在六国下矣。
+          </div>
+      </div>
+        </div>
+        
+    </div>
   </body>
 </html>
+
